@@ -1,0 +1,3 @@
+[submodule "cppenv-core"]
+	path = cppenv-core
+	url = git@github.com:cppvenv/cppenv-core.git
