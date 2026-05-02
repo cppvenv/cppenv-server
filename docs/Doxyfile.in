@@ -1,0 +1,38 @@
+# Doxyfile.in — processed by CMake's configure_file(@ONLY).
+# Do not run Doxygen directly against this file — use the CMake `docs` target.
+
+PROJECT_NAME    = "cppenv-server"
+PROJECT_NUMBER  = @PROJECT_VERSION@
+PROJECT_BRIEF   = "Bundle server for the cppenv C++ package manager"
+PROJECT_LOGO    =
+
+INPUT           = @CMAKE_CURRENT_SOURCE_DIR@/include \
+                  @CMAKE_CURRENT_SOURCE_DIR@/src
+RECURSIVE       = YES
+FILE_PATTERNS   = *.hpp *.h *.cpp
+EXCLUDE_PATTERNS = */deps/* \
+                   */build/* \
+                   */cppenv-core/* \
+                   */.git/*
+
+OUTPUT_DIRECTORY    = @DOXYGEN_OUTPUT_DIR@
+GENERATE_HTML       = NO
+GENERATE_LATEX      = NO
+GENERATE_XML        = YES
+XML_OUTPUT          = xml
+XML_PROGRAMLISTING  = NO
+
+EXTRACT_ALL         = YES
+EXTRACT_PRIVATE     = NO
+EXTRACT_STATIC      = YES
+
+ENABLE_PREPROCESSING = YES
+MACRO_EXPANSION      = YES
+EXPAND_ONLY_PREDEF   = NO
+
+HAVE_DOT = NO
+
+QUIET                   = YES
+WARNINGS                = YES
+WARN_IF_UNDOCUMENTED    = NO
+WARN_IF_DOC_ERROR       = YES

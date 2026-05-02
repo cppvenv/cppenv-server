@@ -1,0 +1,56 @@
+# conf.py.in — processed by CMake's configure_file(@ONLY).
+
+project   = "cppenv-server"
+author    = "Nikola Radovanovic"
+release   = "@PROJECT_VERSION@"
+copyright = "2024, Nikola Radovanovic"
+
+extensions = [
+    "breathe",
+    "sphinxcontrib.moderncmakedomain",
+    "sphinx_copybutton",
+    "sphinx_design",
+    "sphinx.ext.intersphinx",
+]
+
+# ---------------------------------------------------------------------------
+# Breathe
+# ---------------------------------------------------------------------------
+breathe_projects = {
+    "cppenv-server": "@DOXYGEN_OUTPUT_DIR@/xml",
+}
+breathe_default_project = "cppenv-server"
+breathe_default_members = ("members", "undoc-members")
+
+# ---------------------------------------------------------------------------
+# intersphinx — link to cppenv-core API and CMake docs.
+# The URL below is the published GitHub Pages location; adjust if self-hosting.
+# For local cross-referencing during development, point at the core build:
+#   "cppenv-core": ("file://@CPPENV_CORE_SPHINX_OUTPUT@", None)
+# ---------------------------------------------------------------------------
+intersphinx_mapping = {
+    "cppenv-core": ("https://cppvenv.github.io/cppenv-core", None),
+}
+
+# ---------------------------------------------------------------------------
+# CMake modules — server's own cmake/ directory
+# ---------------------------------------------------------------------------
+cmake_source_dir = "@CMAKE_CURRENT_SOURCE_DIR@/cmake"
+
+html_theme = "furo"
+html_title = "cppenv-server"
+
+html_theme_options = {
+    # "source_repository": "https://github.com/cppvenv/cppenv-server",
+    # "source_branch": "main",
+    # "source_directory": "docs/",
+}
+
+source_suffix = ".rst"
+master_doc    = "index"
+
+exclude_patterns = [
+    "_build",
+    "Thumbs.db",
+    ".DS_Store",
+]
