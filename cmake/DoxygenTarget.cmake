@@ -33,7 +33,9 @@ if(NOT BUILD_DOCS)
     return()
 endif()
 
-find_package(Doxygen REQUIRED OPTIONAL_COMPONENTS dot)
+# dot is required for class and inheritance diagrams (HAVE_DOT = YES in
+# Doxyfile.in). Install Graphviz before enabling BUILD_DOCS.
+find_package(Doxygen REQUIRED dot)
 
 find_program(SPHINX_BUILD_EXECUTABLE
     NAMES sphinx-build

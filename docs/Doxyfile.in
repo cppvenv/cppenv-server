@@ -30,7 +30,19 @@ ENABLE_PREPROCESSING = YES
 MACRO_EXPANSION      = YES
 EXPAND_ONLY_PREDEF   = NO
 
-HAVE_DOT = NO
+#---------------------------------------------------------------------------
+# Dot / graphs — Graphviz required.
+#---------------------------------------------------------------------------
+HAVE_DOT                = YES
+DOT_NUM_THREADS         = 0
+CLASS_DIAGRAMS          = YES
+CLASS_GRAPH             = YES
+COLLABORATION_GRAPH     = YES
+INCLUDE_GRAPH           = YES
+INCLUDED_BY_GRAPH       = YES
+CALL_GRAPH              = YES
+CALLER_GRAPH            = YES
+DOT_IMAGE_FORMAT        = png
 
 QUIET                   = YES
 WARNINGS                = YES
