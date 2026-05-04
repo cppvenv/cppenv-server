@@ -11,5 +11,5 @@
  * the full set.
  */
 
-#include <cppenv/server/services/Service.hpp>
-#include <cppenv/server/services/BundleService.hpp>
+#include <cppenv/server/service/Service.hpp>
+#include <cppenv/server/service/BundleService.hpp>

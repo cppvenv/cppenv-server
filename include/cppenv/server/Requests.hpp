@@ -11,4 +11,4 @@
  * the full set.
  */
 
-#include <cppenv/bundles/BundleId.hpp>
+#include <cppenv/bundle/BundleId.hpp>

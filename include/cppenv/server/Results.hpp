@@ -11,5 +11,5 @@
  * the full set.
  */
 
-#include <cppenv/server/results/Result.hpp>
-#include <cppenv/server/results/BundleResult.hpp>
+#include <cppenv/server/result/Result.hpp>
+#include <cppenv/server/result/BundleResult.hpp>

@@ -13,7 +13,7 @@
  * to the log only.
  */
 
-#include <cppenv/exceptions/Exception.hpp>
+#include <cppenv/exception/Exception.hpp>
 #include <cppenv/json.hpp>
 
 namespace cppenv::server {

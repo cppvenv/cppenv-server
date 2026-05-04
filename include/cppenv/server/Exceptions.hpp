@@ -6,7 +6,7 @@
  * @author Nikola Radovanovic
  */
 
-#include "exceptions/ServerException.hpp"
-#include "exceptions/AuthenticationException.hpp"
-#include "exceptions/AuthorizationException.hpp"
-#include "exceptions/RateLimitException.hpp"
+#include "exception/ServerException.hpp"
+#include "exception/AuthenticationException.hpp"
+#include "exception/AuthorizationException.hpp"
+#include "exception/RateLimitException.hpp"
