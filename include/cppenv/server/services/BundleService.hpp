@@ -13,7 +13,7 @@
 
 #include "Service.hpp"
 
-#include <cppenv/server/requests/BundleId.hpp>
+#include <cppenv/bundles/BundleId.hpp>
 #include <cppenv/server/results/BundleResult.hpp>
 
 namespace cppenv::server {
